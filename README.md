@@ -33,3 +33,4 @@ There appears to be a strong correlation between protocol and malicious activity
 
 There are 21220 malicious attempts using the TCP protocol, and only 2 using the UDP protocol. This may be due to the common use of the protocol, or to available tools that tend to prefer TCP over UDP, I will research this further (I should already know this...)
 
+1812 benign UDPs and only 111 benign TCPs
