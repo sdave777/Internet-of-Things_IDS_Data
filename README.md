@@ -7,3 +7,5 @@ This dataset shows typical behavior for malicious activity as compared to benign
 Successful obfuscation is an unknown, it is possible that some of the benigns are malicious, however, port usage may provide a good indicator of compromise (IOC) for these situations.
 
 I would also like to correlate the IOCs present for redundancy to assess their usefulness in rule-building situations.
+
+This would aid defensive cyber operations (DCO) in tailoring their intrusion detection systems (IDS) towards known threats. It's generally accepted that IOCs such as IP addresses and hash values are of limited use, but an analysis of the behavioral patterns shown in the data should provide tactical data that may prove invaluable during an incident.
