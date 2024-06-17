@@ -1,6 +1,6 @@
 # IoT Intrusion Detection System Dataset
 
-Looking at this dataset, it may have potential to correlate variables such as duration of activity and size of file transfers, port usage and protocol. More to come.
+Looking at this dataset, it may have potential to correlate variables such as duration of activity and size of file transfers, port usage and protocol.
 
 This dataset shows typical behavior for malicious activity as compared to benign. This will help us understand adversarial patterns when internet of things (IoT) devices are targeted. 
 
@@ -25,3 +25,8 @@ I would also like to correlate the IOCs present for redundancy to assess their u
 ## Value Proposition
 
 This would aid defensive cyber operations (DCO) in tailoring their intrusion detection systems (IDS) towards known threats. It's generally accepted that IOCs such as IP addresses and hash values are of limited use, but an analysis of the behavioral patterns shown in the data should provide tactical data that may prove invaluable during an incident.
+
+
+## Findings so far
+
+There appears to be a correlation between protocol and malicious activity.
