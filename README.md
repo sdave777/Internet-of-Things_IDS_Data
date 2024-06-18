@@ -37,7 +37,7 @@ There are 21220 malicious attempts using the TCP protocol, and only 2 using the 
 
 1812 benign UDPs and only 111 benign TCPs
 
-It appears that all activity originates from 192.168.1.195, indicating either a compromised device or server, or this is the simply the NAT address that we are seeing. If this an issue with the NAT address, then the following should be done:
+It appears that all activity originates from 192.168.1.195, indicating either a compromised device or server, or this is the simply the NAT address that we are seeing. If the device is compromised, it should be removed and/or, if the resources are available, quarantined and sent to a specialist for forensic analysis. If this an issue with the NAT address, then the following should be done:
 
 ## Strategies for Mitigating NAT's Impact on IDS
 
