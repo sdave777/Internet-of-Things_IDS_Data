@@ -4,6 +4,8 @@ Looking at this dataset, it may have potential to correlate variables such as du
 
 This dataset shows typical behavior for malicious activity as compared to benign. This will help us understand adversarial patterns when internet of things (IoT) devices are targeted. 
 
+The dataset actually shows a need for this organization to concentrate on fundamentals, and I will demonstrate that.
+
 ## Description
 
 17 fields, representing, 	"id.orig_h, id.orig_p, id.resp_h, id.resp_p, proto, service, duration, orig_bytes, resp_bytes, conn_state, missed_bytes	history, orig_pkts, orig_ip_bytes,	resp_pkts, resp_ip_bytes, label"
@@ -34,3 +36,5 @@ There appears to be a strong correlation between protocol and malicious activity
 There are 21220 malicious attempts using the TCP protocol, and only 2 using the UDP protocol. This may be due to the common use of the protocol, or to available tools that tend to prefer TCP over UDP, I will research this further (I should already know this...)
 
 1812 benign UDPs and only 111 benign TCPs
+
+It appears that all activity originates from 192.168.1.195, indicating either a compromised device or server, or this is the simply the NAT address that we are seeing. Without confirming, I'd assess that 192.168.1.195 may be compromised.
