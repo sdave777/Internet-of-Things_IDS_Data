@@ -68,3 +68,14 @@ Internal Network: Multiple subnets with private IP addresses.
 Firewall/NAT Device: Translates internal private IPs to a public IP for outgoing traffic.
 
 IDS Sensors: Deployed both internally (e.g., at subnet boundaries) and externally (e.g., at the perimeter).
+
+### Sources
+
+https://docs.zeek.org/en/current/scripts/base/protocols/conn/main.zeek.html
+
+ipinfo.io
+
+https://www.barracuda.com/support/glossary/intrusion-detection-system#:~:text=An%20intrusion%20detection%20system%20(IDS,information%20and%20event%20management%20system
+
+https://csrc.nist.gov/glossary/term/industrial_control_system#:~:text=Industrial%20control%20systems%20include%20supervisory,controllers%20to%20control%20localized%20processes
+
