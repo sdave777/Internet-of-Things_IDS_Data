@@ -39,35 +39,19 @@ There are 21220 malicious attempts using the TCP protocol, and only 2 using the 
 
 It appears that all activity originates from 192.168.1.195, indicating either a compromised device or server, or this is the simply the NAT address that we are seeing. If the device is compromised, it should be removed and/or, if the resources are available, quarantined and sent to a specialist for forensic analysis. If this an issue with the NAT address, then the following should be done:
 
-## Strategies for Mitigating NAT's Impact on IDS
-
-### Internal Monitoring:
+## Recommendations
 
 Deploy Internal IDS Sensors: Place IDS sensors inside the network, where they can see the original internal IP addresses before NAT occurs. This helps in correlating traffic to specific internal devices.
 
 Monitor Key Network Segments: Position IDS sensors at key points within the network, such as at critical servers or subnet boundaries.
 
-### Correlation with Internal Logs:
-
-Use of Internal Logs: Correlate IDS alerts with internal logs (e.g., firewall logs, DHCP logs) that contain original IP address information. This can help map external traffic back to internal devices.
+Use of Internal Logs: Correlate IDS alerts with internal logs (firewall logs, DHCP logs) that contain original IP address information. This can help map external traffic back to internal devices.
 
 SIEM Integration: Integrate IDS with a Security Information and Event Management (SIEM) system to aggregate and correlate data from multiple sources, providing a more comprehensive view of the network.
 
 Detailed NAT Logging: Configure NAT devices to log detailed translation information, including internal-to-external IP mappings. These logs can be used to trace back the internal source of traffic.
 
 Session Logging: Maintain detailed logs of sessions, including source and destination IPs, ports, and timestamps, to aid in post-event analysis.
-
-### Practical Example of IDS Configuration
-
-Here's a simplified example of how an IDS might be deployed and configured in an enterprise environment with NAT:
-
-### Network Architecture:
-
-Internal Network: Multiple subnets with private IP addresses.
-
-Firewall/NAT Device: Translates internal private IPs to a public IP for outgoing traffic.
-
-IDS Sensors: Deployed both internally (e.g., at subnet boundaries) and externally (e.g., at the perimeter).
 
 ### Sources
 
