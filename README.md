@@ -8,6 +8,8 @@ The dataset actually shows a need for this organization to concentrate on fundam
 
 ## Description
 
+The dataset is currently in the "data" folder, but can also be accessed at https://www.kaggle.com/datasets/wittigenz/hydras
+
 17 fields, representing, 	"id.orig_h, id.orig_p, id.resp_h, id.resp_p, proto, service, duration, orig_bytes, resp_bytes, conn_state, missed_bytes	history, orig_pkts, orig_ip_bytes,	resp_pkts, resp_ip_bytes, label"
 
 Translated, that's the origin IP address and port for the first two, responding IP address and port, then protocol, the rest are self explanatory, history appears to contain hash values, and the labels are "benign" or "malicious".
