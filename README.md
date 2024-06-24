@@ -31,27 +31,27 @@ This would aid defensive cyber operations (DCO) in tailoring their intrusion det
 
 ## Findings
 
-After selecting for labels that equal malicious and plotting those values with an event index count, there appears to be a strong correlation between protocol and malicious activity, moderate correlation with protocol and originating ip address.
+After converting binary values in the label and proto columns, there appears to be a strong correlation between protocol and malicious activity, moderate correlation with protocol and originating ip address.
 
 ![image](https://github.com/sdave777/Internet-of-Things_IDS_Data/assets/132175768/ee4c0e1d-310c-48e9-8842-b351c653b60c)
 
-There are 21220 malicious attempts using the TCP protocol, and only 2 using the UDP protocol. This may be due to the common use of the protocol, or to available tools that tend to prefer TCP over UDP, I will research this further (I should already know this...)
+And after selecting for the malicious and benign labels and plotting each according to protocol used, there are 21220 malicious attempts using the TCP protocol, and only 2 using the UDP protocol. This may be due to the common use of the protocol, or to available tools that tend to prefer TCP over UDP, I will research this further (I should already know this...)
 
 ![image](https://github.com/sdave777/Internet-of-Things_IDS_Data/assets/132175768/539e80e4-1f9c-469c-a691-d03b27d74419)
 
 
 1812 benign UDPs and only 111 benign TCPs
 
-It appears that all activity originates from 192.168.1.195, indicating either a compromised device or server, or this is the simply the NAT address that we are seeing. If the device is compromised, it should be removed and/or, if the resources are available, quarantined and sent to a specialist for forensic analysis. If this an issue with the NAT address, then the following should be done:
+When looking at a network map, it appears that all activity originates from 192.168.1.195, indicating either a compromised device or server, or this is the simply the NAT address that we are seeing. If the device is compromised, it should be removed and/or, if the resources are available, quarantined and sent to a specialist for forensic analysis. If this an issue with the NAT address, then the following should be done:
 
 ![image](https://github.com/sdave777/Internet-of-Things_IDS_Data/assets/132175768/4a80627d-5d8a-4685-a599-6a14fac61621)
 
 
-Targetted IP addresses:
+By selecting for the id.resp_h column, we can see targetted IP addresses:
 
 ![image](https://github.com/sdave777/Internet-of-Things_IDS_Data/assets/132175768/6156014c-c47d-4a60-a177-194a112357b9)
 
-Duration of malicious events with connections states:
+We can also, using our selection of malicious events, plot the duration of malicious events with connections states:
 
 ![image](https://github.com/sdave777/Internet-of-Things_IDS_Data/assets/132175768/99726a4f-28e4-4fd5-b8cc-55eee27712bf)
 
